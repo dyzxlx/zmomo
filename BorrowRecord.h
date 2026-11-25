@@ -5,10 +5,12 @@
 class BorrowRecord {
 private:
     std::string barcode;     // 条码
+    std::string resName;     // 资源名称
     std::string date;        // 借书日期
 
 public:
-    BorrowRecord(const std::string& code, const std::string& d);
+   BorrowRecord(const std::string& code, const std::string& n, const 
+    std::string& d);
     void show() const;
 };
 
